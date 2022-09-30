@@ -1,6 +1,6 @@
 <template>
   <div
-    class="h-auto mx-auto bg-gray-50 border-l-2 border-r-2 border-gray-200 w-full pt-12 lg:max-w-screen-lg lg:px-4 dark:bg-dark-600 dark:border-dark-400">
+    class="h-auto mx-auto bg-gray-50 border-l-2 border-r-2 border-gray-200 w-full px-4 pt-12 lg:max-w-screen-lg xl:px-0 dark:bg-dark-600 dark:border-dark-400">
     <div class="flex px-2 items-center justify-end md:px-0">
       <button class="text-gray-800 dark:text-gray-50" @click="toggleDark">
         <div class="text-xl i-heroicons-solid-moon dark:i-heroicons-solid-sun" />
