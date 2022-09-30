@@ -11,10 +11,10 @@
       <div class="font-semibold text-base text-gray-800 col-span-2 dark:text-gray-50">
         Phone
       </div>
-      <div class="font-semibold text-base text-gray-800 col-span-4 dark:text-gray-50">
+      <div class="font-semibold text-base text-gray-800 col-span-3 dark:text-gray-50">
         Email
       </div>
-      <div class="font-semibold text-base text-gray-800 col-span-2 dark:text-gray-50">
+      <div class="font-semibold text-base text-gray-800 col-span-3 dark:text-gray-50">
         Actions
       </div>
     </div>
@@ -36,10 +36,10 @@
           <div class="font-medium text-lg text-gray-800 col-span-2 dark:text-gray-50">
             {{employee.phone}}
           </div>
-          <div class="font-medium text-lg text-gray-800 col-span-4 dark:text-gray-50">
+          <div class="font-medium text-lg text-gray-800 col-span-3 dark:text-gray-50">
             {{employee.email}}
           </div>
-          <div class="flex gap-2 col-span-2">
+          <div class="flex gap-2 col-span-3">
             <button
               class="rounded-md flex bg-gray-200 p-1 text-dark-900 gap-1 items-center dark:bg-dark-200 dark:text-gray-50 hover:bg-gray-300 active:bg-gray-400 dark:hover:bg-dark-300 dark:active:bg-dark-400"
               @click="openEditModal(employee)">
