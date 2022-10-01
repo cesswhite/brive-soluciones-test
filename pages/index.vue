@@ -33,9 +33,6 @@
 
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
-definePageMeta({
-  title: 'Brivé Soluciones | Test'
-})
 const { search } = storeToRefs(useEmployeeStore())
 const isShowModal = ref(false)
 const color = useColorMode()

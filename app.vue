@@ -10,7 +10,7 @@ useHead({
   viewport: 'width=device-width, initial-scale=1, maximum-scale=5',
   charset: 'utf-8',
   meta: [
-    { hid: 'description', property: 'description', content: 'Test made by César Armando López Lozano' },
+    { name: 'description', content: 'App Test made by César Armando López Lozano' }
   ],
   htmlAttrs: {
     lang: 'es'
