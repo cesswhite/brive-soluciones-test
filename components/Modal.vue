@@ -6,6 +6,9 @@
           <button @click.prevent="closeModal"
             class="text-xl text-gray-800 i-heroicons-solid-x-mark dark:text-gray-50" />
         </div>
+        <h1 class="font-bold text-center text-2xl text-gray-800 dark:text-gray-50">
+          {{ props.mode === "edit" ? "Edit employee" : "Add employee" }}
+        </h1>
         <div class="flex flex-col gap-1">
           <label for="photo" class="font-semibold text-lg text-gray-800 dark:text-gray-50">
             Profile Photo
@@ -36,7 +39,7 @@
           </label>
           <input @keydown="onKeyDown" placeholder="stevejobs@apple.com" name="email"
             class="rounded-md border-2 border-gray-300 py-3 px-4 placeholder-gray-200 dark:bg-dark-200 dark:border-dark-400 dark:placeholder-dark-50 dark:text-gray-50"
-            v-model="email" type="email" />
+            v-model="email" type="email" max="25" maxlength="25" />
         </div>
 
         <button

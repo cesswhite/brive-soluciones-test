@@ -30,13 +30,13 @@
               {{ employee.name.charAt(0) }}
             </div>
           </div>
-          <div class="font-medium text-lg text-gray-800 col-span-3 capitalize dark:text-gray-50">
+          <div class="font-medium text-lg text-gray-800 col-span-3 truncate capitalize dark:text-gray-50">
             {{employee.name}}
           </div>
           <div class="font-medium text-lg text-gray-800 col-span-2 dark:text-gray-50">
             {{employee.phone}}
           </div>
-          <div class="font-medium text-lg text-gray-800 col-span-3 dark:text-gray-50">
+          <div class="font-medium text-lg text-gray-800 col-span-3 truncate dark:text-gray-50">
             {{employee.email}}
           </div>
           <div class="flex gap-2 col-span-3">
@@ -70,18 +70,15 @@
             </div>
             <div class="flex border-b-2 border-gray-200 py-2 items-center justify-between dark:border-dark-200">
               <div class="font-medium text-dark-800 inline dark:text-gray-50">Name</div>
-              <div class="text-dark-800 inline
-dark:text-gray-50">{{ employee.name }}</div>
+              <div class="text-dark-800 inline dark:text-gray-50">{{ employee.name }}</div>
             </div>
             <div class="flex border-b-2 border-gray-200 py-2 items-center justify-between dark:border-dark-200">
               <div class="font-medium text-dark-800 inline dark:text-gray-50">Phone</div>
-              <div class="text-dark-800 inline
-dark:text-gray-50">{{ employee.phone }}</div>
+              <div class="text-dark-800 inline dark:text-gray-50">{{ employee.phone }}</div>
             </div>
             <div class="flex border-b-2 border-gray-200 py-2 items-center justify-between dark:border-dark-200">
               <div class="font-medium text-dark-800 inline dark:text-gray-50">Email</div>
-              <div class="text-dark-800 inline
-dark:text-gray-50">{{ employee.email }}</div>
+              <div class="text-dark-800 inline dark:text-gray-50">{{ employee.email }}</div>
             </div>
             <div class="mt-2">
               <button
