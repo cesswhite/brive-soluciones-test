@@ -40,7 +40,7 @@
             {{employee.email}}
           </div>
           <div class="flex gap-2 col-span-3">
-            <button
+            <button aria-label="edit-employee"
               class="rounded-md flex bg-gray-200 p-1 text-dark-900 gap-1 items-center dark:bg-dark-200 dark:text-gray-50 hover:bg-gray-300 active:bg-gray-400 dark:hover:bg-dark-300 dark:active:bg-dark-400"
               @click="openEditModal(employee)">
               <div class="i-heroicons-solid-pencil-square" />
@@ -48,7 +48,7 @@
                 Edit
               </span>
             </button>
-            <button
+            <button aria-label="remove-employee"
               class="rounded-md flex bg-red-200 p-1 text-red-800 gap-1 items-center hover:bg-red-300 active:bg-red-400"
               @click="removeEmployee(index)">
               <div class="i-heroicons-solid-trash" />
@@ -81,7 +81,7 @@
               <div class="text-dark-800 inline dark:text-gray-50">{{ employee.email }}</div>
             </div>
             <div class="mt-2">
-              <button
+              <button aria-label="edit-employee"
                 class="rounded-md flex bg-gray-200 w-full p-1 text-dark-900 gap-1 justify-center items-center dark:bg-dark-200 dark:text-gray-50 hover:bg-gray-300 active:bg-gray-400 dark:hover:bg-dark-300 dark:active:bg-dark-400"
                 @click="openEditModal(employee)">
                 <div class="i-heroicons-solid-pencil-square" />
@@ -89,7 +89,7 @@
                   Edit
                 </span>
               </button>
-              <button
+              <button aria-label="remove-employee"
                 class="rounded-md flex bg-red-200 mt-2 w-full p-1 text-red-800 gap-1 justify-center items-center hover:bg-red-300 active:bg-red-400"
                 @click="removeEmployee(index)">
                 <div class="i-heroicons-solid-trash" />

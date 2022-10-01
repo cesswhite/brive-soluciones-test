@@ -2,7 +2,7 @@
   <div
     class="h-auto mx-auto bg-gray-50 border-l-2 border-r-2 border-gray-200 w-full px-4 pt-12 lg:max-w-screen-lg 2xl:max-w-screen-2xl dark:bg-dark-600 dark:border-dark-400">
     <div class="flex px-2 items-center justify-end md:px-0">
-      <button class="text-gray-800 dark:text-gray-50" @click="toggleDark">
+      <button aria-label="toogle-mode" class="text-gray-800 dark:text-gray-50" @click="toggleDark">
         <div class="text-xl i-heroicons-solid-moon dark:i-heroicons-solid-sun" />
       </button>
     </div>
@@ -17,7 +17,7 @@
             class="rounded-lg font-medium bg-gray-50 border-2 border-gray-300 text-base py-2 px-8 text-gray-800 dark:bg-dark-200 dark:border-dark-400 dark:text-gray-50"
             placeholder="Search employee" type="text">
         </div>
-        <button @click="isShowModal = true"
+        <button aria-label="new-employee" @click="isShowModal = true"
           class="rounded-lg flex font-semibold bg-blue-600 text-base w-full py-2 px-6 text-gray-50 gap-2 justify-center items-center md:w-auto hover:bg-blue-700 active:bg-blue-800">
           <div class="i-heroicons-solid-plus" />
           New Employee

@@ -3,7 +3,7 @@
     <div class="flex h-screen bg-gray-900/80 w-full top-0 left-0 fixed items-center justify-center">
       <form class="rounded-lg flex flex-col bg-gray-50 w-full p-4 gap-3 lg:w-1/3 dark:bg-dark-600">
         <div class="flex items-center justify-end">
-          <button @click.prevent="closeModal"
+          <button aria-label="close-modal" @click.prevent="closeModal"
             class="text-xl text-gray-800 i-heroicons-solid-x-mark dark:text-gray-50" />
         </div>
         <h1 class="font-bold text-center text-2xl text-gray-800 dark:text-gray-50">
@@ -42,12 +42,12 @@
             v-model="email" type="email" max="25" maxlength="25" />
         </div>
 
-        <button
+        <button aria-label="action-modal"
           class="rounded-md font-semibold bg-blue-600 mt-2 w-full py-3 px-4 text-gray-50 hover:bg-blue-700 active:bg-blue-800"
           @click.prevent="mode === 'edit' ? edit() : add()">
           {{ props.mode === "edit" ? "Edit" : "Add" }} employee
         </button>
-        <button
+        <button aria-label="close-modal"
           class="rounded-md font-semibold border-2 border-blue-600 mt-2 w-full py-3 px-4 text-blue-600 hover:bg-blue-200"
           @click.prevent="closeModal">
           Cancel
